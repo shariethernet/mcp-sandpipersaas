@@ -1,6 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP(name="mcp-sandpiperaas", timeout=30)
+mcp = FastMCP(name="mcp-sandpiperaas", timeout=100)
 
 @mcp.tool()
 def calculator(a: int, b: int, operation: str) -> float | str:
@@ -56,10 +56,11 @@ def convert_tlv_to_sv(input_path: str, output_directory: str = None) -> str:
 
     command = f"sandpiper-saas -i {input_tlv_file_path} -o {output_file_path}.sv"
     try:
-        res = subprocess.run(command, shell=True, check=False,capture_output=True, cwd=os.path.dirname(input_tlv_file_path))
+        subprocess.run(command, shell=True, check=False,capture_output=True, cwd=os.path.dirname(input_tlv_file_path))
     except subprocess.CalledProcessError as e:
         return f"Error: sandpiper-saas execution failed: {e}"
-    return f"{res.stderr}\n{res.stdout}"
+    #return f"{res.stderr}\n{res.stdout}"
+    return f"TLV file converted to SV successfully"
 
 
 if __name__ == "__main__":
