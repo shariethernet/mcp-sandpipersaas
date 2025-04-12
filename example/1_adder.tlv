@@ -9,6 +9,7 @@
    '])   
 \TLV
    $reset = *reset;
+   `BOGUS_USE($reset)
    m4_ifelse_block(M4_MAKERCHIP, 1,['
    '],['
    $aa = *a;

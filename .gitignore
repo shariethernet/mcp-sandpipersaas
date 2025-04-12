@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 *.docs
+
+#outputs
+example/example*

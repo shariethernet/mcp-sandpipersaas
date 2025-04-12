@@ -1,0 +1,5 @@
+Convert this TLV file to SV. Here is the file D:\mcp-sandpipersaas\example\1_adder.tlv
+Ignore tool outputs. Pass --inlineGen and --bestsv as additional arguments
+
+Convert this tlv file 1_adder.tlv inside example directory to systemverilog.
+Ignore tool outputs. Pass --inlineGen and --bestsv as additional arguments
