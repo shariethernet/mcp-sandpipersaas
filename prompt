@@ -3,3 +3,9 @@ Ignore tool outputs. Pass --inlineGen and --bestsv as additional arguments
 
 Convert this tlv file 1_adder.tlv inside example directory to systemverilog.
 Ignore tool outputs. Pass --inlineGen and --bestsv as additional arguments
+
+# You can also describe in natural language the options that you want to pass to sandpiper
+
+Convert this tlv file 1_adder.tlv inside example directory to systemverilog.
+Ignore tool outputs. Only inline gen, and give the best systemverilog
+

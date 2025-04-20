@@ -1,11 +1,12 @@
 [project]
 name = "mcp-sandpipersaas"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP Server that calls sandpiper-saas compile service that compiles a TL-Verilog source to SystemVerilog or Verilog"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "click>=8.1.8",
     "mcp[cli]>=1.6.0",
     "requests>=2.32.3",
+    "sandpiper-saas>=1.1.0",
 ]

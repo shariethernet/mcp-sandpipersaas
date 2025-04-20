@@ -11,4 +11,7 @@ wheels/
 *.docs
 
 #outputs
-example/example*
+example/*.sv
+
+#Other files
+mcp-sandpipersaas_old.py

@@ -26,6 +26,15 @@ wheels = [
 ]
 
 [[package]]
+name = "argparse"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/dd/e617cfc3f6210ae183374cd9f6a26b20514bbb5a792af97949c5aacddf0f/argparse-1.4.0.tar.gz", hash = "sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4", size = 70508 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e65433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl", hash = "sha256:c31647edb69fd3d465a847ea3157d37bed1f95f19760b11a47aa91c04b666314", size = 23000 },
+]
+
+[[package]]
 name = "certifi"
 version = "2025.1.31"
 source = { registry = "https://pypi.org/simple" }
@@ -190,6 +199,7 @@ dependencies = [
     { name = "click" },
     { name = "mcp", extra = ["cli"] },
     { name = "requests" },
+    { name = "sandpiper-saas" },
 ]
 
 [package.metadata]
@@ -197,6 +207,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.8" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.6.0" },
     { name = "requests", specifier = ">=2.32.3" },
+    { name = "sandpiper-saas", specifier = ">=1.1.0" },
 ]
 
 [[package]]
@@ -206,6 +217,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979 },
+]
+
+[[package]]
+name = "path"
+version = "17.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ed/51/127cd9fa2baae5715e24839d6fb73c6fa6eca7b84a52fc7ce8195d830802/path-17.1.0.tar.gz", hash = "sha256:d41e05ed4fa1d4f6d702df3c1e0a1a255d7b544287432456455dc7c51e5f98e9", size = 50081 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/94/30/4b1094c93615ea388058452dee70e3bbc6dc88ececea73f9c4e4437accea/path-17.1.0-py3-none-any.whl", hash = "sha256:688e7ec254f07a1c25f5474662d4480c663a2c8c4eb15c0ba056d8ab81608d22", size = 23839 },
 ]
 
 [[package]]
@@ -322,6 +342,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a1/53/830aa4c3066a8ab0ae9a9955976fb770fe9c6102117c8ec4ab3ea62d89e8/rich-14.0.0.tar.gz", hash = "sha256:82f1bc23a6a21ebca4ae0c45af9bdbc492ed20231dcb63f297d6d1021a9d5725", size = 224078 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl", hash = "sha256:1c9491e1951aac09caffd42f448ee3d04e58923ffe14993f6e83068dc395d7e0", size = 243229 },
+]
+
+[[package]]
+name = "sandpiper-saas"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "argparse" },
+    { name = "click" },
+    { name = "path" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d8/8f/c8e4daf7ca649641b161a98c879f782611c4dd4e7285c3f20760fbe19ca1/sandpiper-saas-1.1.0.tar.gz", hash = "sha256:3bc56e2c449ad2ef6792b130ee95e8627ae3da80adc9db2560202a67e566115b", size = 4754 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/34/193ea688377a82ca8e7f34b9e6a8678d46e0bb95ec23ec754c26267e8c24/sandpiper_saas-1.1.0-py3-none-any.whl", hash = "sha256:26448da3522825746afe0280b000654a2aae3d65e2260caaa18be5caefdd7739", size = 5346 },
 ]
 
 [[package]]
