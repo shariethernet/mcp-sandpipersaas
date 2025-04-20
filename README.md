@@ -1,9 +1,11 @@
 # mcp-sandpiperaas
 
-A FastMCP-based MCP server that wraps Redwood EDA’s SandPiper-SaaS compile function to convert TL‑Verilog (TLV) files into SystemVerilog (SV). Exposes every SandPiper flag as its own MCP tool parameter for introspection and easy automation. In other words, tell in natural language(English) what you want the compiler to do. Refer [prompt](./prompt) for prompt examples.
+A MCP server that wraps Redwood EDA’s SandPiper-SaaS compile function to convert TL‑Verilog (TLV) files into SystemVerilog/Verilog. 
+Exposes every SandPiper flag as its own MCP tool parameter for introspection and easy automation. In other words, tell in natural language(English) what you want the compiler to do. 
+Refer [prompt](./prompt) for prompt examples.
 
 
-This project uses **UV** to manage its virtual environment and dependencies (as defined in `pyproject.toml` and locked in `uv.lock`).
+This project uses **UV** to manage its virtual environment and dependencies.
 
 ### Install UV
 

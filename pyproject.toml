@@ -8,5 +8,4 @@ dependencies = [
     "click>=8.1.8",
     "mcp[cli]>=1.6.0",
     "requests>=2.32.3",
-    "sandpiper-saas>=1.1.0",
 ]
